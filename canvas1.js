@@ -120,7 +120,7 @@ function Circle(x, y, dx, dy, radius) {
         c.fill();
 
     }
-
+    /*allowing particles to bounce off the sides of the screen*/
     this.update = function () {
         if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
             this.dx = -this.dx;
